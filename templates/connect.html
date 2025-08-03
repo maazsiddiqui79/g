@@ -1,8 +1,8 @@
-<!-- ms me ps pe mx px py right left-->
+ms me ps pe mx px py right left
 {% block head %}
 <style>
   input {
-    width: 400px;
+    width: 330px;
     border: none;
     border-bottom: 1px black solid;
     font-weight: bolder;
@@ -44,6 +44,40 @@
 <div class="album py-5 ">
   <div class="container">
     <div class="row row-cols- row-cols-sm-12 row-cols-lg-7 row-cols-md-12 g-3">
+      <h3 class="container display-6  pt-5 fw-bolder  lh-1 mb-3 " style="font-family: 'Cambria'">
+            Let’s Start a Conversation
+          </h3>
+          <form action="/" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label"><b>Full Name</b></label>
+
+              <input class="input" type="text" class="form-control" name="name" required placeholder="xyz" />
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label"><b>Subject</b></label>
+
+              <input class="input" type="text" class="form-control" name="subject" required placeholder="topic" />
+            </div>
+            <div class="mb-3">
+              <label for="phoneno" class="form-label"><b>Phone no</b></label>
+
+              <input class="input" type="text" class="form-control" name="phoneno" required placeholder="topic" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label"><b>Email address</b></label>
+              <input class="input" type="email" class="form-control" name="email" required
+                placeholder="abc@gmail.com" />
+            </div>
+            <div class="mb-3">
+              <label for="msg" class="form-label"><strong>Message</strong></label><br />
+              <textarea name="msg" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="Send" class="btn btn-dark btn-outline-light" />
+          </form>
+      
 
 
       <div class="col">
@@ -133,40 +167,7 @@
           </div>
 
 
-          <h3 class="container display-6  pt-5 fw-bolder  lh-1 mb-3 " style="font-family: 'Cambria'">
-            Let’s Start a Conversation
-          </h3>
-          <form action="/" method="post">
-            <div class="mb-3">
-              <label for="name" class="form-label"><b>Full Name</b></label>
-
-              <input class="input" type="text" class="form-control" name="name" required placeholder="xyz" />
             </div>
-
-            <div class="mb-3">
-              <label for="subject" class="form-label"><b>Subject</b></label>
-
-              <input class="input" type="text" class="form-control" name="subject" required placeholder="topic" />
-            </div>
-            <div class="mb-3">
-              <label for="phoneno" class="form-label"><b>Phone no</b></label>
-
-              <input class="input" type="text" class="form-control" name="phoneno" required placeholder="topic" />
-            </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label"><b>Email address</b></label>
-              <input class="input" type="email" class="form-control" name="email" required
-                placeholder="abc@gmail.com" />
-            </div>
-            <div class="mb-3">
-              <label for="msg" class="form-label"><strong>Message</strong></label><br />
-              <textarea name="msg" cols="40" rows="10"></textarea>
-            </div>
-
-            <input type="submit" value="Send" class="btn btn-dark btn-outline-light" />
-          </form>
-        </div>
 
 
       </div>

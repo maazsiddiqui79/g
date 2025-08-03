@@ -124,3 +124,11 @@ small {
         width: 100%;
     }
 
+
+.card2 {
+    
+    width: 100%;
+    
+    padding: 2rem;
+    border-radius: 10px;
+}
