@@ -1,0 +1,8 @@
+flask
+flask_sqlalchemy
+flask_ckeditor
+flask_login
+flask_wtf
+flask_bootstrap
+gunicorn
+psycopg[binary]

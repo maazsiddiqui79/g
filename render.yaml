@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: maaz-portfolio
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
