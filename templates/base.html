@@ -20,44 +20,43 @@
     crossorigin="anonymous"></script>
   <title>Maaz | Portfolio</title>
 
-  <style>
-    .nav-link {
-      color: inherit;
-      transition: all 0.3s ease-out;
-      color: rgba(50, 50, 50, 0.913);
-
-      text-decoration: none;
-      padding-left: 10px;
-      margin-left: 5px;
-      margin-right: 5px;
-      padding-right: 10px;
-    }
-
-
-    .nav-link:hover,
-    a:active,
-    .nav-link:focus {
-      color: black;
-
-      box-shadow: 3px 3px 10px rgba(1, 1, 1, 0.2);
-      transition: all 0.2s ease-in;
-      transform-origin: center;
-      text-decoration: underline;
-      border-bottom: 1.5px solid rgb(0, 0, 0);
-      border-top: 1.5px solid rgb(0, 0, 0);
+    <style>
+        .nav-link-header {
+            color: inherit;
+            transition: all 0.3s ease-out;
+            color: rgba(50, 50, 50, 0.913);
+            
+            text-decoration: none;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-right: 10px;
+        }
 
 
+        .nav-link-header:hover,a:active,.nav-link-header:focus {
+            color: black;
 
-      padding-left: 3px;
-      padding-right: 3px;
+            box-shadow: 3px 3px 10px rgba(1, 1, 1, 0.2);
+            transition: all 0.2s ease-in;
+            transform-origin: center;
+            text-decoration: underline;
+            border-bottom: 1.5px solid rgb(0, 0, 0);
+            border-top: 1.5px solid rgb(0, 0, 0);
+            
 
-    }
+            
+            padding-left: 3px;
+            padding-right: 3px;
 
-    header {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  </style>
+        }
+
+        header {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    </style>
+
   {% block head %}{% endblock %}
   <link rel="shortcut icon" href="../static/icons-portfolio.png" type="image/x-icon">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
@@ -68,29 +67,30 @@
 
 <body>
 
-  <div class="container">
+      <div class="container">
 
 
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top"
-      style="background-color:whitesmoke;"> 
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none">
-        <h5><span style="font-family: 'Cambria';">/siddiqui</span><span style="color: rgba(13, 110, 253, 0.9);">/maaz-/</span></h5></a>
-        <p class="nav nav-pills">
-          <a href="/" class="nav-link active-link" aria-current="page">Home</a> /
-          <a href="#skills" class="nav-link active-link">Skills</a> /
-          <a href="#projects" class="nav-link active-link">Project</a> /
-          <a href="#about" class="nav-link active-link">About</a> /
-          <a href="#connect" class="nav-link active-link">Connect</a>
-        </p>
-    </header>
-  </div>
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top"
+            style="background-color:whitesmoke;"> <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <h5><span style="font-family: 'Cambria';">/siddiqui</span>/maaz-/</h5>
+                <p class="nav nav-pills">
+                    <a href="/" class="nav-link-header active-link" aria-current="page">Home</a> /
+                    <a href="#skills" class="nav-link-header active-link">Skills</a> /
+                    <a href="#projects" class="nav-link-header active-link">Project</a> /
+                    <a href="#about" class="nav-link-header active-link">About</a> /
+                    <a href="#connect" class="nav-link-header active-link">Connect</a>
+                </p>
+        </header>
+    </div>
+
   {% block body %} {% endblock %}
   
 
 </body>
 
-<!-- <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
     
     <p class="col-md-4 mb-0 text-body-secondary">© 2025 | Portfolio | <i>Built by Maaz Siddiqui</i></p> <a href="/"
       class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -102,6 +102,6 @@
       <li class="nav-item nav-link px-2 text-body-secondary" style="font-style:italic;font-weight:bolder">~Stay productive. Stay</li>
     </ul>
   </footer>
-</div> -->
+
 
 </html>
