@@ -1,10 +1,8 @@
-{% extends 'base.html' %} {% block title %}Maaz | Portfolio{% endblock %} {%
-block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-{% endblock %} {% block body %}
+{% extends 'base.html' %} {% block title %}Maaz | Portfolio{% endblock %} 
+{% block body %}
 <!-- First Look -->
 
-<div class="container col-xxl-8 px-4 py-5">
+<div class="container  px-4 py-5">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-12 col-sm-12 col-lg-6">
       <img
@@ -31,15 +29,16 @@ block head %}
       </p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <a
-              class="btn btn-dark btn-lg px-4 me-md-2"
+              class="btn btn-dark btn-lg px-4"
               href="https://github.com/maazsiddiqui79"
               target="_blank"
             >
               Git
             </a>
+            <a href="/">HOME</a>
       
             <a
-              class="btn btn-outline-dark btn-lg px-4 me-md-2"
+              class="btn btn-outline-dark btn-lg px-4"
               href="https://drive.google.com/file/d/12QjslxE5O1K-yP-KNqAwv-dUOELkO0jp/view?usp=sharing"
               target="_blank"
             >
@@ -51,24 +50,67 @@ block head %}
 </div>
 
 <!-- End First Look -->
-<hr class="custom-hr" />
+<hr  />
 <!-- Skills  -->
+ <hr>
  <div id="skills">{% include 'skills.html' %}</div>
  <!-- End Skils -->
  
  <!-- Projects  -->
+ <hr>
  <div id="projects">{% include 'projects.html' %}</div>
  
  <!-- End Projects -->
  
  <!-- About  -->
+ <hr>
  <div id="about">{% include 'about.html' %}</div>
  
  <!-- End Projects -->
  
- <!-- Connect  -->
- <div id="connect">{% include 'connect.html' %}</div>
  
-<!-- End Connect -->
+ 
+ <!-- Stats -->
+ <section class="container col-xl-8">
+  <div class="row py-lg-5">
+    <div class="container col-xl-8 mt-5"
+    style="border-left: 2px black solid;margin:1rem;height:100px;padding-left: 30px;">
+    <h3 class="display-5 fw-bolder text-body-emphasis lh-1 mb-3" style="font-family: 'Cambria'">
+        Track
+      </h3>
+      <p class="lead text-body-secondary">Work in Figures</p>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row justify-content-center text-center">
+    <div class="col-12 col-md-3 bg-light border border-dark shadow-lg p-3 mx-2 my-2">
+      <strong>Project Built</strong>
+      <hr>
+      <h4 class="text-primary">+75</h4>
+    </div>
 
+    <div class="col-12 col-md-3 bg-light border border-dark shadow-lg p-3 mx-2 my-2">
+      <strong>Deployed</strong>
+      <hr>
+      <h4 class="text-primary">+6</h4>
+    </div>
+
+    <div class="col-12 col-md-3 bg-light border border-dark shadow-lg p-3 mx-2 my-2">
+      <strong>GUI Applications</strong>
+      <hr>
+      <h4 class="text-primary">+7</h4>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+
+<!-- End Stats -->
+
+<!-- Connect  -->
+<hr>
+<div id="connect">{% include 'connect.html' %}</div>
+<hr>
+
+<!-- End Connect -->
 {% endblock %}
